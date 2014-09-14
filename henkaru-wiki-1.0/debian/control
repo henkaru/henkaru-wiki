@@ -1,0 +1,12 @@
+Source: henkaru-wiki
+Section: misc
+Priority: optional
+Maintainer: Alexey Alexashin <alexashin.a.n@yandex.ru>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+Homepage: https://github.com/henkaru/henkaru-wiki.git
+
+Package: henkaru-wiki
+Architecture: all
+Depends: ${misc:Depends}, dokuwiki
+Description: Metapackage for dokuwiki
