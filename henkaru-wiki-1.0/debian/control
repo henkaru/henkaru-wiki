@@ -8,5 +8,5 @@ Homepage: https://github.com/henkaru/henkaru-wiki.git
 
 Package: henkaru-wiki
 Architecture: all
-Depends: ${misc:Depends}, dokuwiki
+Depends: ${misc:Depends}, dokuwiki, wkhtmltopdf
 Description: Metapackage for dokuwiki
