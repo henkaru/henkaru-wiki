@@ -3,10 +3,10 @@
 # and sends it via mail
 
 PDFDIR='/opt/wiki/pdf'
-[ -e "/opt/maillist" ] && ADDRLIST=`cat "$PDFDIR"/maillist` || ADDRLIST="admin"
+[ -e "/opt/maillist" ] && ADDRLIST=`cat /opt/maillist` || ADDRLIST="admin"
 [ ! -d "$PDFDIR" ] && mkdir -p "$PDFDIR"
-DATE=`date -d 'month ago' +%m-%Y | sed 's/0//'`
-filename="stats_${DATE}"
+DATE=`date -d 'month ago' +%m-%Y`
+filename="stats_${DATE#0}"
 URL='http://wiki.a/doku.php?id=reports:'$filename
 
 # Coverting url to PDF file
