@@ -35,7 +35,7 @@ def previousmonthpage():
     '''Writes a previous month traffic statistics to wiki page file'''
 
     month = (date.today() - timedelta(days=(date.today().day + 1))).month
-    year = date.today().year
+    year = (date.today() - timedelta(days=(date.today().day + 1))).year
     pagepath = '/usr/share/dokuwiki/data/pages/'
     reportpath = pagepath + 'reports/'
     reportfile = pagepath + 'reports.txt'
